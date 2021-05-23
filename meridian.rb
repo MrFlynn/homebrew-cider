@@ -5,24 +5,24 @@
 class Meridian < Formula
   desc "A tool for getting information about your current location."
   homepage "https://github.com/mrflynn/meridian"
-  version "0.1.4"
+  version "0.1.5"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/MrFlynn/meridian/releases/download/v0.1.4/meridian_0.1.4_darwin_amd64.tar.gz"
-    sha256 "d737abbf76c896b63d0748e73ac71e4b290f26ac4914799a48b49d492ef0ea16"
+    url "https://github.com/MrFlynn/meridian/releases/download/v0.1.5/meridian_0.1.5_darwin_amd64.tar.gz"
+    sha256 "90b61251d4e1597e6a648c630a41372b3d5140f4577b25346cfb93f71b09461e"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/MrFlynn/meridian/releases/download/v0.1.4/meridian_0.1.4_darwin_arm64.tar.gz"
-    sha256 "477d5ba0d3d15e86ea194f92a0f222d0155d013a8044441f229f65c235cbd3b4"
+    url "https://github.com/MrFlynn/meridian/releases/download/v0.1.5/meridian_0.1.5_darwin_arm64.tar.gz"
+    sha256 "ddc3ecea904a86cefe9ba0d7956159a6b47a00924ddd02c7ff7de9a1950c4e83"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/MrFlynn/meridian/releases/download/v0.1.4/meridian_0.1.4_linux_amd64.tar.gz"
-    sha256 "cf1303279687000afbe1686d37a804251959f89986bbfb241188f006127e6f46"
+    url "https://github.com/MrFlynn/meridian/releases/download/v0.1.5/meridian_0.1.5_linux_amd64.tar.gz"
+    sha256 "87c26fd745beffc7884dcdeafba0bbbefefdca69815e35378aa284d45c145947"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/MrFlynn/meridian/releases/download/v0.1.4/meridian_0.1.4_linux_arm64.tar.gz"
-    sha256 "e24b2f74973a80e020349c2d1c745d0dce6b05037a50a0bace2736b4c62494ea"
+    url "https://github.com/MrFlynn/meridian/releases/download/v0.1.5/meridian_0.1.5_linux_arm64.tar.gz"
+    sha256 "b8266d909f04094d32cde98dddf76d285001b1a4b018edfc7e138265b23754b6"
   end
 
   def install
